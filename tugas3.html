@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan</title>
+    <script>
+        function calc()
+        {
+            var n1 = parseFloat(document.getElementById('n1').value);
+            var n2 = parseFloat(document.getElementById('n2').value);
+            var oper = document.getElementById('operators').value;
+
+            if(oper === '+')
+            {
+               document.getElementById('result').value = n1+n2;
+            }
+
+
+            if(oper === '-')
+            {
+               document.getElementById('result').value = n1-n2;
+            }
+
+
+            if(oper === 'x')
+            {
+               document.getElementById('result').value = n1*n2;
+            }
+
+
+            if(oper === '/')
+            {
+               document.getElementById('result').value = n1/n2;
+            }
+           
+        }
+
+
+        function tambah()
+        {
+            var t1 = parseFloat(document.getElementById('t1').value);
+            var t2 = parseFloat(document.getElementById('t2').value);
+            var oper = document.getElementById('tambah').value;
+
+            if(oper === '+')
+            {
+                document.getElementById('hasil').value = t1+t2
+            }
+        } 
+
+
+        function kurang()
+        {
+            var k1 = parseFloat(document.getElementById('k1').value);
+            var k2 = parseFloat(document.getElementById('k2').value);
+            var oper = document.getElementById('kurang').value;
+
+            if(oper === '-')
+            {
+                document.getElementById('hitung').value = k1-k2
+            }
+
+        }
+
+
+        function kali()
+        {
+            var c1 = parseFloat(document.getElementById('c1').value);
+            var c2 = parseFloat(document.getElementById('c2').value);
+            var oper = document.getElementById('kali').value;
+
+            if(oper === 'x')
+            {
+                document.getElementById('kira').value = c1*c2
+            }
+
+        }
+
+
+        function bagi()
+        {
+            var b1 = parseFloat(document.getElementById('b1').value);
+            var b2 = parseFloat(document.getElementById('b2').value);
+            var oper = document.getElementById('bagi').value;
+
+            if(oper === '/')
+            {
+                document.getElementById('jumlah').value = b1/b2
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <h3>Kode Program Aritmatika Sederhana</h3>
+    
+Bilangan Pertama : <input type="text" id="n1"><br>
+<br>
+Bilangan Kedua : <input type="text" id="n2"><br>
+<br>
+
+<select id="operators">
+    <option value="+">Jenis Pilihan</option>
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="x">x</option>
+    <option value="/">/</option>
+</select>
+<button onclick="calc() ;">=</button>
+<input type="text" id="result"><br><br>
+
+
+
+    <h3>Penjumlahan</h3>
+    Bilangan Pertama : <input type="text"  id="t1"><br><br>
+    Bilangan Kedua : <input type="text" id="t2"><br><br>
+
+    <select id="tambah">
+        <option value="+">+</option>
+    </select>
+    <button onclick="tambah();">=</button>
+    <input type="text" id="hasil"><br><br>
+    
+
+    <h3>Pengurangan</h3>
+    Bilangan Pertama : <input type="text"  id="k1"><br><br>
+    Bilangan Kedua : <input type="text" id="k2"><br><br>
+
+    <select id="kurang">
+        <option value="-">-</option>
+    </select>
+    <button onclick="kurang();">=</button>
+    <input type="text" id="hitung"><br><br>
+
+
+    <h3>Perkalian</h3>
+    Bilangan Pertama : <input type="text"  id="c1"><br><br>
+    Bilangan Kedua : <input type="text" id="c2"><br><br>
+
+    <select id="kali">
+        <option value="x">x</option>
+    </select>
+    <button onclick="kali();">=</button>
+    <input type="text" id="kira"><br><br>
+
+
+    <h3>Pembagian</h3>
+    Bilangan Pertama : <input type="text"  id="b1"><br><br>
+    Bilangan Kedua : <input type="text" id="b2"><br><br>
+
+    <select id="bagi">
+        <option value="/">/</option>
+    </select>
+    <button onclick="bagi();">=</button>
+    <input type="text" id="jumlah"><br><br>
+    
+    
+</body>
+</html>
