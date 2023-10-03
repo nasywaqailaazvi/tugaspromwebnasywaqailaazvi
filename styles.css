@@ -1,0 +1,58 @@
+.custom-navbar {
+  background-color: #3da9fc;
+}
+
+.carousel-img {
+  height: 100vh;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: black;
+  /* font-size: 50px; */
+}
+.carousel-caption h1 {
+  font-size: 60px;
+}
+
+@media (max-width: 767px) {
+  .carousel-caption h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .carousel-caption h4 {
+    font-size: 20px;
+  }
+}
+
+.carousel {
+  height: 100vh;
+}
+
+.card-style {
+  transition: transform 0.3s;
+}
+
+.card-style:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#tujuan {
+  background-color: #fffffe;
+  padding: 50px;
+}
+
+#tentang {
+  background-color: #d8eefe;
+  padding: 50px;
+}
+
+#pesan {
+  background-color: #fffffe;
+  padding: 50px;
+}
